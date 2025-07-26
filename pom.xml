@@ -35,7 +35,21 @@
 			<scope>test</scope>
 		</dependency>
 
-	</dependencies>
+	</dependencies> 
+	<distributionManagement>
+	    <repository>
+	    <id>nexus</id>
+	      <name>Mithun Technologies Releases Nexus Repository</name>
+	      <url>http://35.154.197.222:8081/repository/wallmart-releases/</url>
+	    </repository>
+	    
+	    <snapshotRepository>
+	      <id>nexus</id>
+	      <name>Mithun Technologies Snapshot Nexus Repository </name>
+	      <url>http://35.154.197.222:8081/repository/wallmart-snapshot/</url>
+	    </snapshotRepository>
+	</distributionManagement>
+
 
 	<!-- Committing and updating changes through Maven, by using below mvn command. 
 		For Commiting mvn -Dmessage="Updated using maven" scm:checkin For updating 
